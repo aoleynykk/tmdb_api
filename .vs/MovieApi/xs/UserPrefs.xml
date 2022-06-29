@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{D7CEF932-71CD-42BF-9C9E-2ADE0C9867F9}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MovieApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyMacID" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/WatchListController.cs">
+    <Files>
+      <File FileName="Clients/IMovieClient.cs" Line="13" Column="33" />
+      <File FileName="Controllers/MovieInfoController.cs" Line="12" Column="20" />
+      <File FileName="Controllers/SearchMovieController.cs" Line="13" Column="20" />
+      <File FileName="Controllers/MovieListOf.cs" Line="13" Column="20" />
+      <File FileName="Clients/MovieClient.cs" Line="86" Column="1" />
+      <File FileName="Models/NowPlayingMoviesModel.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="49" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Models/MovieVideoModel.cs" Line="11" Column="6" />
+      <File FileName="Constants.cs" Line="13" Column="1" />
+      <File FileName="Clients/IDynamoDBClient.cs" Line="9" Column="41" />
+      <File FileName="Clients/DynamoDBClient.cs" Line="59" Column="65" />
+      <File FileName="Extensions/ToClass.cs" Line="29" Column="10" />
+      <File FileName="Controllers/WatchListController.cs" Line="40" Column="36" />
+      <File FileName="Models/MovieInfoModel.cs" Line="20" Column="50" />
+      <File FileName="Models/TrendingMoviesModel.cs" Line="1" Column="1" />
+      <File FileName="Models/UpcomingMoviesModel.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MovieApi" expanded="True">
+            <Node name="MovieApi" expanded="True">
+              <Node name="Clients" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
