@@ -45,6 +45,7 @@ namespace MovieApi.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetWatchList()
         {
+            
             try
             {
                 var response = await _dynamoDBClient.GetWatchList();
@@ -56,8 +57,11 @@ namespace MovieApi.Controllers
                     id = o.id,
                     title = o.title,
                     poster_path = o.poster_path,
-                    vote_average = o.vote_average
-                });
+                    vote_average = o.vote_average,
+                    overview = o.overview
+                }).ToList();
+
+                
                 return Ok(result);
             }
             catch (Exception e)
@@ -79,7 +83,8 @@ namespace MovieApi.Controllers
                 id = watchListResponse.id,
                 title = watchListResponse.title,
                 poster_path = watchListResponse.poster_path,
-                vote_average = watchListResponse.vote_average
+                vote_average = watchListResponse.vote_average,
+                overview = watchListResponse.overview
             };
 
             await _dynamoDBClient.AddMovieToWatchList(data);

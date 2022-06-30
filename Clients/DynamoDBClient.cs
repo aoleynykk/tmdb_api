@@ -32,7 +32,8 @@ namespace MovieApi.Clients
                     { "id", new AttributeValue { N = $"{watchListResponse.id}" } },
                     { "title", new AttributeValue { S = watchListResponse.title } },
                     { "poster_path", new AttributeValue { S = watchListResponse.poster_path } },
-                    { "vote_average", new AttributeValue { N = $"{watchListResponse.vote_average}" } }
+                    { "vote_average", new AttributeValue { N = $"{watchListResponse.vote_average}" } },
+                    { "overview", new AttributeValue { S = watchListResponse.overview } }
                 }
             };
 
