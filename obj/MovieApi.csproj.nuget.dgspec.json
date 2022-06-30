@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oleynyk/Desktop/io/MovieApi/MovieApi.csproj": {}
+    "/Users/oleynyk/tmdb_api/MovieApi.csproj": {}
   },
   "projects": {
-    "/Users/oleynyk/Desktop/io/MovieApi/MovieApi.csproj": {
+    "/Users/oleynyk/tmdb_api/MovieApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oleynyk/Desktop/io/MovieApi/MovieApi.csproj",
+        "projectUniqueName": "/Users/oleynyk/tmdb_api/MovieApi.csproj",
         "projectName": "MovieApi",
-        "projectPath": "/Users/oleynyk/Desktop/io/MovieApi/MovieApi.csproj",
+        "projectPath": "/Users/oleynyk/tmdb_api/MovieApi.csproj",
         "packagesPath": "/Users/oleynyk/.nuget/packages/",
-        "outputPath": "/Users/oleynyk/Desktop/io/MovieApi/obj/",
+        "outputPath": "/Users/oleynyk/tmdb_api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/oleynyk/.nuget/NuGet/NuGet.Config"
