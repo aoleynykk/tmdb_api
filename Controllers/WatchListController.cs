@@ -32,24 +32,31 @@ namespace MovieApi.Controllers
         [HttpGet("GetWatchList")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetWatchList()
         {
-            var response = await _dynamoDBClient.GetWatchList();
-
-            if (response == null)
-                return NotFound("NO DATA");
-
-            
-            var result = response.Select(o => new WatchListResponse()
+            try
             {
-                id = o.id,
-                title = o.title,
-                poster_path = o.poster_path,
-                vote_average = o.vote_average
-            }).ToList();
-           
+                var response = await _dynamoDBClient.GetWatchList();
+                if (response == null)
+                    return NotFound("NO DATA");
 
-            return Ok(result);
+                var result = response.Select(o => new WatchListResponse()
+                {
+                    id = o.id,
+                    title = o.title,
+                    poster_path = o.poster_path,
+                    vote_average = o.vote_average
+                }).ToList();
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode("Server Error");
+            }
+
+           
         }
 
         [HttpPost("AddToWatchList")]
