@@ -57,7 +57,7 @@ namespace MovieApi.Controllers
                     title = o.title,
                     poster_path = o.poster_path,
                     vote_average = o.vote_average
-                }).ToList();
+                });
                 return Ok(result);
             }
             catch (Exception e)
