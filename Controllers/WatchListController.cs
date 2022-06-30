@@ -52,8 +52,8 @@ namespace MovieApi.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                return StatusCode("Server Error");
+                Console.WriteLine("Server Error" + e);
+                return StatusCode(500);
             }
 
            
