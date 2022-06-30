@@ -22,10 +22,20 @@ namespace MovieApi.Controllers
         }
 
         [HttpDelete("DeleteMovieFromWatchList")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteFromWatchList(int id)
         {
-            await _dynamoDBClient.DeleteFromWatchList(id);
-            return Ok("SUCCESFULLY REMOVED");
+            try
+            {
+                await _dynamoDBClient.DeleteFromWatchList(id);
+                return Ok("SUCCESFULLY REMOVED");
+            }
+            catch
+            {
+                return NotFound("NO SUCH FILM");
+            }
+            
 
         }
 
