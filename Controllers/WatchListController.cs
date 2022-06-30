@@ -39,6 +39,7 @@ namespace MovieApi.Controllers
             if (response == null)
                 return NotFound("NO DATA");
 
+            
             var result = response.Select(o => new WatchListResponse()
             {
                 id = o.id,

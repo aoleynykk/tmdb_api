@@ -21,7 +21,7 @@ namespace MovieApi.Extensions
                     }
                     else if (!string.IsNullOrEmpty(kv.Value.N))
                     {
-                        property.SetValue(obj, int.Parse(kv.Value.N));
+                        property.SetValue(obj, double.Parse(kv.Value.N));
                     }
                 }
             }
