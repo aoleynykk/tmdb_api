@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-var credentials = new BasicAWSCredentials("AKIAZD636WXEC7KA5R6Y", "4BsMVDb50baOsSTqoAQozU6kc9kbEzR5ChStYDez");
+var credentials = new BasicAWSCredentials("", "");
 var config = new AmazonDynamoDBConfig()
 {
     RegionEndpoint = RegionEndpoint.USEast1
